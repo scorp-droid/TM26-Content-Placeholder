@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 40%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+ .btn {
+  box-shadow: 0px 0px 110px 1px rgba(255, 145, 175, 0.14),
+    0px 0px 19px 6px rgba(255, 145, 175, 0.03),
+    0px 0px 26px 12px rgba(255, 145, 175, 0.14),
+    0px 0px 29px 12px rgba(255, 145, 175, 0.14);
+  background-color: rgba(255, 145, 175, 0.5);
+  border: 1px solid rgba(255, 145, 175, 0);
+  border-radius: 40px;
+
+  color: #FFD6E9;
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "Great Vibes", cursive;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8),
+    0 0 40px rgba(255, 255, 255, 0.8), 0 0 50px rgba(255, 255, 255, 0.8),
+    0 0 60px rgba(255, 255, 255, 0.8), 0 0 70px rgba(255, 255, 255, 0.8);
+
+  padding: 6rem;
+  border-radius: 15px;
+  border: none;
+} 
+
+
+
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+#toasts {
+  position: fixed;
+  bottom: 15rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.toast {
+  /* background-color: #FFD3E6; */
+  color: rebeccapurple;
+  font-family: "Great Vibes", cursive;
+  font-size: 2.2rem;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  text-align: center;
+
+
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+               0 0 20px rgba(255, 255, 255, 0.8),
+               0 0 30px rgba(255, 255, 255, 0.8),
+               0 0 40px rgba(255, 255, 255, 0.8),
+               0 0 50px rgba(255, 255, 255, 0.8),
+               0 0 60px rgba(255, 255, 255, 0.8),
+               0 0 70px rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 700px) {
+  .btn {
+    padding: 3rem;
+    font-size: 3rem;
+    border-radius: 6rem;
+  }
+
+  #toasts {
+    top: 5rem;
+  }
+
+  .toast {
+    font-size: 2rem;
+  }
+}
